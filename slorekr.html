@@ -11,6 +11,7 @@
             background-color: rgba(9, 18, 34, 0.644);
             color: rgb(255, 255, 255);
             font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
         }
         #a {
             font-size:50px;
@@ -21,59 +22,130 @@
         #c{
             font-size:20px;
         }
-        #d{
-            text-align: center; vertical-align: middle
-        }
+
         td , th { border: 2px solid black;}
         
-    </style>
+	    #container
+	    {
+		    width: 1000px;
+		    position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+	    }
+	    #logo
+	    {
+		    background-color: rgba(0, 0, 0, 0.493);
+		    color: white;
+		    text-align: center;
+		    padding: 15px;
+	    }
+	    #nav
+	    {
+		    float: left;
+		    background-color: rgba(0, 0, 0, 0.644);
+		    width: 120px;
+		    min-height: 620px;
+		    padding: 10px;
+	    }
+	    #content
+	    {
+		    float: left;
+		    padding: 20px;
+		    width: 640px;
+	    }
+        #d
+        {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center; 
+            vertical-align: middle;
+        }
+	    #ad
+	    {
+		    float: left;
+		    width: 160px;
+		    min-height: 620px;
+		    padding: 10px;
+		    background-color: (0, 0, 0, 0.644);
+	    }
+	    #footer
+	    {
+		    clear: both;
+		    background-color: black;
+		    color: white;
+		    text-align: center;
+		    padding: 20px;
+	    }	
+	</style>
 </head>
 <body id="c">
-    <strong id="a">1F </strong>- rozszerzone treści nauczania z <strong>geografii, biologii i języka angielskiego</strong><br>
-    <img src="sports.png"><br>
-    <strong>Powinieneś wybrać klasę sportową, jeśli: </strong>
-    <ul >
-        <li>odnosisz znaczące sukcesy w różnych dziedzinach sportu (koszykówka, siatkówka);</li>
-        <li>marzysz o rozwijaniu swoich umiejętności sportowych pod okiem doświadczonych
-trenerów;</li>
-        <li>przeszedłeś pozytywnie testy sprawnościowe;</li>
-        <li>marzysz o podjęciu studiów na Akademii Wychowania Fizycznego, Wyższej Szkole Kultury
-Fizycznej i Turystyki w Pruszkowie, Wyższej Szkole Rehabilitacji w Warszawie, Wyższej
-Szkole Sportowej w Łodzi, Wyższej Szkole Turystyki i Hotelarstwa, Wyższej Szkole–
-Edukacja w Sporcie w Bielsku-Białej.</li>
-        <li>w przyszłości chcesz przystąpić do egzaminu maturalnego z geografii, biologii, języka
-angielskiego na poziomie rozszerzonym.</li>
-    </ul>
-    <i id="b"><strong>Nabór odbywa się poza systemem elektronicznym.</strong></i><br>
-    <strong id="a">1F </strong>-plan nauczania
-    <table id="d">
-        <thead>
-           <tr> <th> Rok/Klasa <th> 1 <th> 2 <th> 3 <th> 4  
-        <tbody>
-           <tr> <th> j.polski <td> 4 <td> 4 <td> 4 <td> 4
-           <tr> <th> j.angielski <td> 3 <td> 3 <td> 3 <td> 3
-           <tr> <th> j.niemiecki   <td> 2(1j)  <td> 2(1j)  <td> 2(1j)  <td> 2(1j) 
-           <tr> <th> j.francuski   <td> 2(1j)  <td> 2(1j)  <td> 2(1j)  <td> 2(1j) 
-           <tr> <th> matematyka   <td> 3 <td> 4 <td> 3 <td> 4
-           <tr> <th> wf   <td> 3 <td> 3 <td> 3 <td> 3
-           <tr> <th> godz.wych   <td> 1 <td> 1 <td> 1 <td> 1
-           <tr> <th> biologia   <td> 1 <td> 2 <td> 1 <td> 
-           <tr> <th> chemia   <td> 1 <td> 2 <td> 1 <td> 
-           <tr> <th> geografia   <td> 1 <td> 2 <td> 1 <td> 
-           <tr> <th> historia   <td> 2 <td> 2 <td> 2 <td> 2
-           <tr> <th> wos   <td> 1 <td> 1 <td>  <td> 
-           <tr> <th> fizyka   <td> 1 <td> 1 <td> 2 <td> 
-           <tr> <th> przedsięb.   <td>  <td> 1 <td> 1 <td> 
-           <tr> <th> plastyka   <td> 1 <td>  <td>  <td> 
-           <tr> <th> informatyka   <td> 1 <td> 1 <td> 1 <td> 
-           <tr> <th> e_dla_bezp   <td> 1 <td>  <td>  <td> 
-           <tr> <th> religia   <td> 2 <td> 2 <td> 2 <td> 2
-           <tr> <th> wych.rodz.   <td> 14r <td> 14r <td> 14r <td> 
-           <tr> <th> doradz. zaw.   <td> 2r <td> 2r <td> 3r <td> 3r
-           <tr> <th> r_angielski   <td> 1 <td> 2 <td> 2 <td> 3;1dyr
-           <tr> <th> s_zaj.sport.   <td> 13  <td> 13  <td> 13  <td> 13 
-           <tr> <th> r_biologia   <td> 1 <td> 2 <td> 2 <td> 3;1dyr 
-           <tr> <th> r_geografia   <td> 2 <td> 1 <td> 3 <td> 3;1dyr                                                                
-     </table>
+    <div id="container"> 
+        <div id="logo">     
+            <strong id="a">1F </strong>- rozszerzone treści nauczania z <strong>geografii, biologii i języka angielskiego</strong><br>
+            <img src="sports.png"><br>
+        </div>
+        
+        <div id="nav">
+
+        </div>
+
+        <div id="content">
+            <strong>Powinieneś wybrać klasę sportową, jeśli: </strong>
+            <ul >
+                <li>odnosisz znaczące sukcesy w różnych dziedzinach sportu (koszykówka, siatkówka);</li>
+                <li>marzysz o rozwijaniu swoich umiejętności sportowych pod okiem doświadczonych
+        trenerów;</li>
+                <li>przeszedłeś pozytywnie testy sprawnościowe;</li>
+                <li>marzysz o podjęciu studiów na Akademii Wychowania Fizycznego, Wyższej Szkole Kultury
+        Fizycznej i Turystyki w Pruszkowie, Wyższej Szkole Rehabilitacji w Warszawie, Wyższej
+        Szkole Sportowej w Łodzi, Wyższej Szkole Turystyki i Hotelarstwa, Wyższej Szkole–
+        Edukacja w Sporcie w Bielsku-Białej.</li>
+                <li>w przyszłości chcesz przystąpić do egzaminu maturalnego z geografii, biologii, języka
+        angielskiego na poziomie rozszerzonym.</li>
+            </ul>
+            <i id="b"><strong>Nabór odbywa się poza systemem elektronicznym.</strong></i><br>
+            <strong id="a">1F </strong>-plan nauczania
+                <table id="d">
+                    <thead>
+                    <tr> <th> Rok/Klasa <th> 1 <th> 2 <th> 3 <th> 4  
+                    <tbody>
+                    <tr> <th> j.polski <td> 4 <td> 4 <td> 4 <td> 4
+                    <tr> <th> j.angielski <td> 3 <td> 3 <td> 3 <td> 3
+                    <tr> <th> j.niemiecki   <td> 2(1j)  <td> 2(1j)  <td> 2(1j)  <td> 2(1j) 
+                    <tr> <th> j.francuski   <td> 2(1j)  <td> 2(1j)  <td> 2(1j)  <td> 2(1j) 
+                    <tr> <th> matematyka   <td> 3 <td> 4 <td> 3 <td> 4
+                    <tr> <th> wf   <td> 3 <td> 3 <td> 3 <td> 3
+                    <tr> <th> godz.wych   <td> 1 <td> 1 <td> 1 <td> 1
+                    <tr> <th> biologia   <td> 1 <td> 2 <td> 1 <td> 
+                    <tr> <th> chemia   <td> 1 <td> 2 <td> 1 <td> 
+                    <tr> <th> geografia   <td> 1 <td> 2 <td> 1 <td> 
+                    <tr> <th> historia   <td> 2 <td> 2 <td> 2 <td> 2
+                    <tr> <th> wos   <td> 1 <td> 1 <td>  <td> 
+                    <tr> <th> fizyka   <td> 1 <td> 1 <td> 2 <td> 
+                    <tr> <th> przedsięb.   <td>  <td> 1 <td> 1 <td> 
+                    <tr> <th> plastyka   <td> 1 <td>  <td>  <td> 
+                    <tr> <th> informatyka   <td> 1 <td> 1 <td> 1 <td> 
+                    <tr> <th> e_dla_bezp   <td> 1 <td>  <td>  <td> 
+                    <tr> <th> religia   <td> 2 <td> 2 <td> 2 <td> 2
+                    <tr> <th> wych.rodz.   <td> 14r <td> 14r <td> 14r <td> 
+                    <tr> <th> doradz. zaw.   <td> 2r <td> 2r <td> 3r <td> 3r
+                    <tr> <th> r_angielski   <td> 1 <td> 2 <td> 2 <td> 3;1dyr
+                    <tr> <th> s_zaj.sport.   <td> 13  <td> 13  <td> 13  <td> 13 
+                    <tr> <th> r_biologia   <td> 1 <td> 2 <td> 2 <td> 3;1dyr 
+                    <tr> <th> r_geografia   <td> 2 <td> 1 <td> 3 <td> 3;1dyr                                                                
+                </table>
+        </div>
+
+        
+
+        <div id="ad">
+
+        </div>
+
+        <div id="footer">
+
+        </div>
+    </div> 
 </body>
 </html>
