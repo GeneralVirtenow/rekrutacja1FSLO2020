@@ -11,7 +11,8 @@
             background-color: rgba(9, 18, 34, 0.644);
             color: rgb(255, 255, 255);
             font-family: Arial, Helvetica, sans-serif;
-            position: absolute;
+            padding: 0;
+            margin: 0;
         }
         #a {
             font-size:50px;
@@ -28,24 +29,23 @@
 	    #container
 	    {
 		    width: 1000px;
-		    position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
 	    }
 	    #logo
 	    {
 		    background-color: rgba(0, 0, 0, 0.493);
 		    color: white;
 		    text-align: center;
-		    padding: 15px;
 	    }
 	    #nav
 	    {
 		    float: left;
 		    background-color: rgba(0, 0, 0, 0.644);
 		    width: 120px;
-		    min-height: 620px;
 		    padding: 10px;
+            height: 1500px;
 	    }
 	    #content
 	    {
@@ -61,7 +61,7 @@
             text-align: center; 
             vertical-align: middle;
         }
-	    #ad
+	    #kremówka
 	    {
 		    float: left;
 		    width: 160px;
@@ -77,17 +77,26 @@
 		    text-align: center;
 		    padding: 20px;
 	    }	
+        .blin{
+            width: 100%;
+        }
+        .imgContainer{
+            padding: 0 10px;
+        }
 	</style>
 </head>
 <body id="c">
     <div id="container"> 
         <div id="logo">     
             <strong id="a">1F </strong>- rozszerzone treści nauczania z <strong>geografii, biologii i języka angielskiego</strong><br>
-            <img src="sports.png"><br>
+            <div class="imgContainer">
+                <img class="blin" src="sports.png"><br>
+            </div>
+
         </div>
         
         <div id="nav">
-
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus natus, commodi ut ad delectus voluptate tempore quisquam cupiditate assumenda blanditiis enim dolore quibusdam minus praesentium quasi in debitis at quas.</span>
         </div>
 
         <div id="content">
@@ -137,10 +146,9 @@
                 </table>
         </div>
 
-        
-
-        <div id="ad">
-
+    
+        <div id="kremówka">
+            <img src="bogush.jpg" alt="">
         </div>
 
         <div id="footer">
